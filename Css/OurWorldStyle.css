@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+*
+{
+    FONT-WEIGHT: 100;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body
+{
+    background: #0f0f0f;
+}
+
+.HeadderSection
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 170px;
+    z-index: 99;
+}
+
+.LogoText
+{
+    width: 190px;
+}
+
+.SectionNamesText
+{
+    position: relative;
+    margin-left: 60px;
+    font-size: 16px;
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.SectionNamesText::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 1px;
+    background-color: white;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+
+.SectionNamesText:hover::after
+{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.AllContainer
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.FirstRow
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.FirstImageAndText
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.ImagesSize
+{
+    height: 280px;
+    width: 480px;
+}
+
+.TextHeading
+{
+    color: white;
+    font-size: 16px;
+    margin: 15px 0px;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.SubText
+{
+    color: rgb(142, 142, 142);
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.FooterContainer
+{
+    height: 45vh;
+    background-color: #161f1e;
+    display: flex;
+    padding: 0% 13%;
+}
+
+.FooterColumn
+{   
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterTop
+{
+    padding: 7% 0%;
+    justify-content: space-between;
+    display: flex;
+    /* align-items: center; */
+}
+
+.FooterLogo
+{
+    padding-bottom: 10%;
+}
+
+.FooterLinksHeading
+{
+    font-size: 13px;
+    color: rgb(176, 176, 176);
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.FooterLinks
+{
+    font-size: 16px;
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.FooterTextAlignment
+{
+    line-height: 35px;
+}
+
+.RightSideContent
+{
+    display: flex;
+    width: 60%;
+}
+
+.FooterColumns
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.Copyrights
+{
+    font-size: 18px;
+    color: gray;
+}

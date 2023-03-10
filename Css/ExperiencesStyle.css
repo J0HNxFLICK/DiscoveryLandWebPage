@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*
+{
+    FONT-WEIGHT: 100;
+    margin: 0px;
+    padding: 0px;
+}
+
+.VideoContainer
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.BackgroundClip
+{
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+}
+
+.HeadderSection
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 170px;
+    z-index: 99;
+}
+
+.LogoText
+{
+    width: 190px;
+}
+
+.SectionNamesText
+{
+    position: relative;
+    margin-left: 60px;
+    font-size: 16px;
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.SectionNamesText::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 1px;
+    background-color: white;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+
+.SectionNamesText:hover::after
+{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.InvitationTextParent
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.InvitationText
+{
+    padding: 0% 20%;
+}
+
+.one
+{
+    font-family: Bangers;
+}
+
+.two
+{
+    font-family: Roboto;
+}
+
+.StartText
+{
+    font-size: 80px;
+    color: white;
+}
+
+.ExperiencesQuoteContainer
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 125vh;
+    justify-content: center;
+}
+
+.ExperienceQuoteColomn
+{
+    display: flex;
+    flex-direction: column;
+    padding: 7% 0% 7% 0%;
+    width: 80%;
+}
+
+.Quote
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0% 0% 5% 0%;
+}
+
+.QuoteMain
+{
+    font-size: 45px;
+    color: #111;
+    font-family: GT-Secra;
+}
+
+.QuoteWithImage
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0%;
+    padding-left: 70px;
+}
+
+.QuotationTextHere
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.QuotationTitle
+{
+    font-size: 40px;
+}
+
+.QuotationSubText
+{
+    font-size: 20px;
+    line-height: 35px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: grey;
+}
+
+.QuotationImage
+{
+    width: 700px;
+    height: 820px;
+    overflow: hidden;
+}
+
+.Img1
+{
+    width: 700px;
+    height: 1000px;
+}
+
+.PhotoCollectionContainer
+{
+    display: flex;
+    width: 100%;
+    height: 250vh;
+    background-color: #ebeaeaa6;
+    padding: 5% 0%;
+}
+
+.PhotoCollectionColumn
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.PicAndText1
+{
+    display: flex;
+    padding: 40px 0px 40px 0px;
+    height: 33%;
+}
+
+.PicAndTextBackgroundBlock1
+{
+    z-index: 1;
+    background-color: rgb(206, 205, 164);
+    height: 500px;
+    width: 1150px;
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 20%;
+}
+
+.Pic1
+{
+    height: 800px;
+    width: 1400px;
+    z-index: 2;
+    margin-left: 4%;
+    position: absolute;
+}
+
+.Text1
+{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 600px;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 60%;
+    position: absolute;
+
+    padding: 7% 4% 5% 4%;
+}
+
+.PicAndText2
+{
+    display: flex;
+    padding: 60px 0px;
+    height: 33%;
+}
+
+.PicAndTextBackgroundBlock2
+{
+    z-index: 1;
+    background-color: rgb(138, 174, 165);
+    height: 500px;
+    width: 1150px;
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 23%;
+}
+
+.Pic2
+{
+    height: 800px;
+    width: 1400px;
+    z-index: 2;
+    margin-left: 27%;
+    position: absolute;
+}
+
+.Text2
+{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 600px;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    position: absolute;
+
+    padding: 7% 4% 5% 4%;
+}
+
+.PicAndText3
+{
+    display: flex;
+    padding: 40px 0px 0px 0px;
+    height: 33%;
+}
+
+.PicAndTextBackgroundBlock3
+{
+    z-index: 1;
+    background-color: rgb(233, 210, 188);
+    height: 500px;
+    width: 1150px;
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 20%;
+}
+
+.Pic3
+{
+    height: 800px;
+    width: 1400px;
+    z-index: 2;
+    margin-left: 4%;
+    position: absolute;
+}
+
+.Text3
+{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 600px;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 60%;
+    position: absolute;
+
+    padding: 7% 4% 5% 4%;
+}
+
+.PreFooterTint
+{
+    width: 100%;
+    height: 45vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.PreFooter
+{
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+}
+
+.PreFooterImg
+{
+    width: 100%;
+    height: 55vh;
+}
+
+.PreFooterText
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45vh;
+}
+
+.PreFooterText span
+{
+    font-size: 65px;
+    color: white;
+}
+
+.PreFooterText a
+{
+    font-size: 20px;
+}
+
+.FooterContainer
+{
+    height: 45vh;
+    background-color: #161f1e;
+    display: flex;
+    padding: 0% 13%;
+}
+
+.FooterColumn
+{   
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterTop
+{
+    padding: 7% 0%;
+    justify-content: space-between;
+    display: flex;
+    /* align-items: center; */
+}
+
+.FooterLogo
+{
+    padding-bottom: 10%;
+}
+
+.FooterLinksHeading
+{
+    font-size: 13px;
+    color: rgb(176, 176, 176);
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.FooterLinks
+{
+    font-size: 16px;
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.FooterTextAlignment
+{
+    line-height: 35px;
+}
+
+.RightSideContent
+{
+    display: flex;
+    width: 60%;
+}
+
+.FooterColumns
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.Copyrights
+{
+    font-size: 18px;
+    color: gray;
+}
+
+.AnchorButtons
+{
+    display: flex;
+    border: 1px solid black;
+    text-decoration: none;
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    border-color: rgb(184, 184, 184);
+    border-width: 1px;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: bold;
+    
+}
+
+.BottomAnchor
+{
+    background-color: transparent;
+    color: white;
+}
+
+/* .Buttons
+{
+    width: 200px;
+    height: 70px;
+    font-size: 15px;
+    background-color: white;
+    border-color: rgb(184, 184, 184);
+    border-width: 1px;
+}
+
+.BottomButton
+{
+    width: 200px;
+    height: 70px;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+} */
